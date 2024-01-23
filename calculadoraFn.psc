@@ -26,21 +26,16 @@ Algoritmo calculadoraFn
 	Leer num2
 	Escribir '1. Suma 2. Resta 3. Multiplicacion 4. Division'
 	Leer operacion
-	
-	
-	Si operacion=1 Entonces
-		Escribir suma(num1,num2)
-	SiNo
-		Si operacion=2 Entonces
+	Según operacion Hacer
+		1:
+			Escribir suma(num1,num2)
+		2:
 			Escribir resta(num1,num2)
-		SiNo
-			Si operacion=3 Entonces
-				Escribir producto(num1,num2)
-			SiNo
-				Si operacion=4 Entonces
-					Escribir division(num1,num2)
-				FinSi
-			FinSi
-		FinSi
-	FinSi
+		3:
+			Escribir producto(num1,num2)
+		4:
+			Escribir division(num1,num2)
+		De Otro Modo:
+			Escribir 'Error: Operador incorrecto'
+	FinSegún
 FinAlgoritmo
